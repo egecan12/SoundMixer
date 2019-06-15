@@ -19,7 +19,7 @@
       }
 
       .sound {
-        background-color: rgb(246, 160, 255);
+        background-color: rgb(94, 43, 100);
         height: 20vh;
         width: 31vw;
         transition: background-color 0.2s ease;
@@ -27,6 +27,12 @@
 
       .press {
         background-color: rgb(248, 255, 160);
+
+        
+      }
+      audio{
+
+        visibility: hidden;
       }
     </style>
   </head>
@@ -36,29 +42,29 @@
       <div class="sound" data-keycode="49"></div>
       <div class="sound" data-keycode="50"></div>
       <div class="sound" data-keycode="51"></div>
-      <div class="sound" data-keycode="81"></div>
-      <div class="sound" data-keycode="87"></div>
-      <div class="sound" data-keycode="69"></div>
-      <div class="sound" data-keycode="65"></div>
-      <div class="sound" data-keycode="83"></div>
-      <div class="sound" data-keycode="68"></div>
-      <div class="sound" data-keycode="90"></div>
-      <div class="sound" data-keycode="88"></div>
-      <div class="sound" data-keycode="67"></div>
+      <div class="sound" data-keycode="113"></div>
+      <div class="sound" data-keycode="119"></div>
+      <div class="sound" data-keycode="101"></div>
+      <div class="sound" data-keycode="97"></div>
+      <div class="sound" data-keycode="115"></div>
+      <div class="sound" data-keycode="100"></div>
+      <div class="sound" data-keycode="122"></div>
+      <div class="sound" data-keycode="120"></div>
+      <div class="sound" data-keycode="99"></div>
     </main>
 
-    <audio data-key="49" src="./sounds/one.ogg"></audio>
-    <audio data-key="50" src="./sounds/two.ogg"></audio>
-    <audio data-key="51" src="./sounds/three.ogg"></audio>
-    <audio data-key="81" src="./sounds/four.ogg"></audio>
-    <audio data-key="87" src="./sounds/five.ogg"></audio>
-    <audio data-key="69" src="./sounds/six.ogg"></audio>
-    <audio data-key="65" src="./sounds/seven.ogg"></audio>
-    <audio data-key="83" src="./sounds/eight.ogg"></audio>
-    <audio data-key="68" src="./sounds/nine.ogg"></audio>
-    <audio data-key="90" src="./sounds/ten.ogg"></audio>
-    <audio data-key="88" src="./sounds/eleven.ogg"></audio>
-    <audio data-key="67" src="./sounds/twelve.ogg"></audio>
+    <audio controls loop data-key="49" src="./sounds/1.wav"></audio>
+    <audio controls loop data-key="50" src="./sounds/2.mp3"></audio>
+    <audio controls loop data-key="51" src="./sounds/3.mp3"></audio>
+    <audio controls loop data-key="113" src="./sounds/q2.wav"></audio>
+    <audio controls loop data-key="119" src="./sounds/w.wav"></audio>
+    <audio controls loop data-key="101" src="./sounds/six.ogg"></audio>
+    <audio controls loop data-key="97" src="./sounds/seven.ogg"></audio>
+    <audio controls loop data-key="115" src="./sounds/eight.ogg"></audio>
+    <audio controls loop data-key="100" src="./sounds/nine.ogg"></audio>
+    <audio controls loop data-key="122" src="./sounds/ten.ogg"></audio>
+    <audio controls loop data-key="120" src="./sounds/eleven.ogg"></audio>
+    <audio controls loop data-key="99" src="./sounds/twelve.ogg"></audio>
     
     <script src="index.js"></script>
 
@@ -68,3 +74,4 @@
     -->
   </body>
 </html>
+3
