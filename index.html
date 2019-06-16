@@ -19,12 +19,13 @@
 
 
     }
-    
-    p{
+
+    p {
 
       font-family: 'Jura', sans-serif;
     }
-    #beside{
+
+    #beside {
 
       position: relative;
       bottom: 180px;
@@ -77,6 +78,22 @@
 
       color: aliceblue;
     }
+
+
+    #video{
+      position: relative;
+      bottom: 200px;
+      
+    }
+
+    .videoT{
+
+
+      position: relative;
+      bottom: 150px;
+      background-color: aliceblue;
+
+    }
   </style>
 </head>
 
@@ -108,30 +125,34 @@
   <audio controls loop data-key="122" src="./sounds/z.mp3"></audio>
   <audio controls loop data-key="120" src="./sounds/x.wav"></audio>
   <audio controls loop data-key="99" src="./sounds/c.wav"></audio>
+  <h3 class="videoT">Video Tutorial ↓</h3>
 
   <script src="index.js"></script>
+  <video id="video" width="320" height="240" controls>
+    <source src="sounds/video.mp4" type="video/mp4">
 
+  </video>
   <!-- 
       Credits: This is an attempt to recreate https://www.youtube.com/watch?v=4ghnO8ScYH4 for educational purpose 
       Credits: Wes Bos' JS30 https://github.com/wesbos/JavaScript30/blob/master/01%20-%20JavaScript%20Drum%20Kit/index-FINISHED.html
     -->
   <beside id="beside">
-  <h3 class="tutorial" id="tutorial"> Tutorial</h3>
-  <div class="tutorial">
-    <p>Press or hold these buttons on your keyboard!<br>
-      Keep the swap between the keys as smooth as possible !
-      <br> 1 2 3
-      <br>Q W E <br>A S D <br>Z X C </p>
+    <h3 class="tutorial" id="tutorial"> Tutorial</h3>
+    <div class="tutorial">
+      <p>Press or hold these buttons on your keyboard!<br>
+        Keep the swap between the keys as smooth as possible !
+        <br> 1 2 3
+        <br>Q W E <br>A S D <br>Z X C </p>
       <p id="footer">Made by Egecan Kahyaoglu</p>
-  </div>
-  <h3 class="tutorial" id="tutorial2"> Beni Oku </h3>
-  <div class="tutorial">
-    <p>Alttaki tuslara bas! Ne kadar basarsan o kadar devam eder !<br>
-       Tuslar arasi gecisleri olabildigince purussuz tut!<br>
-       
-      <br> 1 2 3
-      <br>Q W E <br>A S D <br>Z X C </p>
-  </div>
+    </div>
+    <h3 class="tutorial" id="tutorial2"> Beni Oku </h3>
+    <div class="tutorial">
+      <p>Alttaki tuslara bas! Ne kadar basarsan o kadar devam eder !<br>
+        Tuslar arasi gecisleri olabildigince purussuz tut!<br>
+
+        <br> 1 2 3
+        <br>Q W E <br>A S D <br>Z X C </p>
+    </div>
 
 
   </beside>
@@ -142,7 +163,7 @@
 
 
 <footer>
-  <p id="footer"> </p>
+
 </footer>
 
 </html>
