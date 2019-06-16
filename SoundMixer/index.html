@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Self Servis Disc Jokey</title>
+  <link href="style.css" rel="stylesheet" type="text-css" />
+  <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
+  <style>
+    body {
+
+      background-image: url("https://images.alphacoders.com/488/thumb-1920-488118.jpg");
+
+      font-family: 'Jura', sans-serif;
+
+
+
+
+    }
+    
+    p{
+
+      font-family: 'Jura', sans-serif;
+    }
+    #beside{
+
+      position: relative;
+      bottom: 180px;
+    }
+
+
+
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 3px;
+      grid-row-gap: 3px;
+      justify-items: stretch;
+      align-items: stretch;
+      justify-content: stretch;
+      max-width: 375px;
+    }
+
+    .sound {
+      background-color: rgb(114, 41, 121);
+      height: 20vh;
+      width: 31vw;
+      transition: background-color 0.2s ease;
+      opacity: 0.5;
+    }
+
+    .press {
+      background-color: rgb(248, 255, 160);
+
+
+    }
+
+    audio {
+
+      visibility: hidden;
+    }
+
+
+    #footer {
+      color: aliceblue;
+      position: relative;
+      bottom: 180px;
+
+    }
+
+    .tutorial {
+
+
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="sound" data-keycode="49"></div>
+    <div class="sound" data-keycode="50"></div>
+    <div class="sound" data-keycode="51"></div>
+    <div class="sound" data-keycode="113"></div>
+    <div class="sound" data-keycode="119"></div>
+    <div class="sound" data-keycode="101"></div>
+    <div class="sound" data-keycode="97"></div>
+    <div class="sound" data-keycode="115"></div>
+    <div class="sound" data-keycode="100"></div>
+    <div class="sound" data-keycode="122"></div>
+    <div class="sound" data-keycode="120"></div>
+    <div class="sound" data-keycode="99"></div>
+  </main>
+
+  <audio controls loop data-key="49" src="./sounds/1.mp3"></audio>
+  <audio controls loop data-key="50" src="./sounds/2.mp3"></audio>
+  <audio controls loop data-key="51" src="./sounds/3.mp3"></audio>
+  <audio controls loop data-key="113" src="./sounds/q.wav"></audio>
+  <audio controls loop data-key="119" src="./sounds/w.wav"></audio>
+  <audio controls loop data-key="101" src="./sounds/e.mp3"></audio>
+  <audio controls loop data-key="97" src="./sounds/a.wav"></audio>
+  <audio controls loop data-key="115" src="./sounds/s.wav"></audio>
+  <audio controls loop data-key="100" src="./sounds/d.wav"></audio>
+  <audio controls loop data-key="122" src="./sounds/z.mp3"></audio>
+  <audio controls loop data-key="120" src="./sounds/x.wav"></audio>
+  <audio controls loop data-key="99" src="./sounds/c.wav"></audio>
+
+  <script src="index.js"></script>
+
+  <!-- 
+      Credits: This is an attempt to recreate https://www.youtube.com/watch?v=4ghnO8ScYH4 for educational purpose 
+      Credits: Wes Bos' JS30 https://github.com/wesbos/JavaScript30/blob/master/01%20-%20JavaScript%20Drum%20Kit/index-FINISHED.html
+    -->
+  <beside id="beside">
+  <h3 class="tutorial" id="tutorial"> Tutorial</h3>
+  <div class="tutorial">
+    <p>Press or hold these buttons on your keyboard!<br>
+      Keep the swap between the keys as smooth as possible !
+      <br> 1 2 3
+      <br>Q W E <br>A S D <br>Z X C </p>
+      <p id="footer">Made by Egecan Kahyaoglu</p>
+  </div>
+  <h3 class="tutorial" id="tutorial2"> Beni Oku </h3>
+  <div class="tutorial">
+    <p>Alttaki tuslara bas! Ne kadar basarsan o kadar devam eder !<br>
+       Tuslar arasi gecisleri olabildigince purussuz tut!<br>
+       
+      <br> 1 2 3
+      <br>Q W E <br>A S D <br>Z X C </p>
+  </div>
+
+
+  </beside>
+
+</body>
+
+
+
+
+<footer>
+  <p id="footer"> </p>
+</footer>
+
+</html>
